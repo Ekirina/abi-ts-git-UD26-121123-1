@@ -20,20 +20,20 @@ public class Proveedores {
 	@Column(name = "nombre")
 	private String nombre;
 	
-	@OneToMany
+	/*@OneToMany
 	@JoinColumn(name="id")
-	private List<Suministra> suministra;
+	private List<Suministra> suministra;*/
 	
 	//Constructores
 	public Proveedores() {
 		
 	}
 
-	public Proveedores(int id, String nombre, List<Suministra> suministra) {
+	public Proveedores(int id, String nombre) {
 		//super();
 		this.id = id;
 		this.nombre = nombre;
-		this.suministra = suministra;
+		//this.suministra = suministra;
 	}
 	//Getters y setters
 
@@ -52,7 +52,7 @@ public class Proveedores {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	@JsonIgnore
+	/*@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Suministra")
 	public List<Suministra> getSuministra() {
 		return suministra;
@@ -60,7 +60,7 @@ public class Proveedores {
 
 	public void setSuministra(List<Suministra> suministra) {
 		this.suministra = suministra;
-	}
+	}*/
 	//Método String
 
 	@Override
