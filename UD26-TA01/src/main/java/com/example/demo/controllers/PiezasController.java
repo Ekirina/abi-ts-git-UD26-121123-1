@@ -53,7 +53,7 @@ public class PiezasController {
 		return Piezas_actualizado;
 	}
 	@DeleteMapping("/piezas/{id}")
-	public void eleiminarCurso(@PathVariable(name="id")int id) {
+	public void eliminarCurso(@PathVariable(name="id")int id) {
 		piezasServiceImpl.eliminarPiezas(id);
 	}
 }
