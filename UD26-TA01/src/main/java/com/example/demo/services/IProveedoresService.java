@@ -16,4 +16,4 @@ public interface IProveedoresService {
 	public Proveedores actualizarProveedores(Proveedores proveedores); //Actualiza datos 
 	
 	public void eliminarProveedores(int id);// Elimina datos
-}
+}	
